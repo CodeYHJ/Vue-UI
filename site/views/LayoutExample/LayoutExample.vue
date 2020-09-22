@@ -25,7 +25,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-import { createClass } from '../util';
+import { createClass } from '../../util';
 
 export default defineComponent({
   name: 'LayoutExample',
@@ -37,3 +37,7 @@ export default defineComponent({
   }
 });
 </script>
+
+<style lang="less">
+@import './index.less';
+</style>

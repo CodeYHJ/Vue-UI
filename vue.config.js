@@ -1,11 +1,14 @@
 // vite.config.js
 // import { myResolver } from "./scripts/myResolver";
-import path from 'path'
-module.exports = {
-  configureWebpack:(config:any)=>{
-    config.entry('a').add(path.resolve(__dirname, "./site/main.ts"))
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require("path");
 
-  },
+module.exports = {
+  configureWebpack: config => {
+    config.resolve.alias["@"] = path.resolve(__dirname, "./components");
+
+    config.entry.app = path.resolve(__dirname, "./site/main.ts");
+  }
   // resolvers: [myResolver],
   // cssPreprocessOptions: {
   //   less: {
@@ -26,4 +29,4 @@ module.exports = {
   //     }
   //   }
   // }
-}
+};

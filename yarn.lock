@@ -1253,7 +1253,7 @@
   resolved "https://registry.npm.taobao.org/@types/minimist/download/@types/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
   integrity sha1-aaI6OtKcrwCX8G7aWbNh7i8GOfY=
 
-"@types/node@*":
+"@types/node@*", "@types/node@^14.11.1":
   version "14.11.1"
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.11.1.tgz?cache=0&sync_timestamp=1600365423347&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.11.1.tgz#56af902ad157e763f9ba63d671c39cda3193c835"
   integrity sha1-Vq+QKtFX52P5umPWccOc2jGTyDU=
@@ -7175,6 +7175,11 @@ node-addon-api@^1.7.1:
   resolved "https://registry.npm.taobao.org/node-addon-api/download/node-addon-api-1.7.2.tgz?cache=0&sync_timestamp=1600445335907&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnode-addon-api%2Fdownload%2Fnode-addon-api-1.7.2.tgz#3df30b95720b53c24e59948b49532b662444f54d"
   integrity sha1-PfMLlXILU8JOWZSLSVMrZiRE9U0=
 
+node-bin-setup@^1.0.0:
+  version "1.0.6"
+  resolved "https://registry.npm.taobao.org/node-bin-setup/download/node-bin-setup-1.0.6.tgz#4b5c9bb937ece702d7069b36ca78af4684677528"
+  integrity sha1-S1ybuTfs5wLXBps2ynivRoRndSg=
+
 node-cache@^4.1.1:
   version "4.2.1"
   resolved "https://registry.npm.taobao.org/node-cache/download/node-cache-4.2.1.tgz?cache=0&sync_timestamp=1593619285095&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnode-cache%2Fdownload%2Fnode-cache-4.2.1.tgz#efd8474dee4edec4138cdded580f5516500f7334"
@@ -7251,6 +7256,13 @@ node-releases@^1.1.61:
   version "1.1.61"
   resolved "https://registry.npm.taobao.org/node-releases/download/node-releases-1.1.61.tgz?cache=0&sync_timestamp=1599612925853&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnode-releases%2Fdownload%2Fnode-releases-1.1.61.tgz#707b0fca9ce4e11783612ba4a2fcba09047af16e"
   integrity sha1-cHsPypzk4ReDYSukovy6CQR68W4=
+
+node@^14.11.0:
+  version "14.11.0"
+  resolved "https://registry.npm.taobao.org/node/download/node-14.11.0.tgz#0a7c6206fa8ce655a7d8251fd6ef07d7c58ffc82"
+  integrity sha1-CnxiBvqM5lWn2CUf1u8H18WP/II=
+  dependencies:
+    node-bin-setup "^1.0.0"
 
 nopt@^5.0.0:
   version "5.0.0"

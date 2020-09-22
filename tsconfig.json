@@ -13,11 +13,12 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
-      "jest"
+      "jest",
+      "node"
     ],
     "paths": {
       "@/*": [
-        "src/*"
+        "components/*"
       ]
     },
     "lib": [
@@ -28,9 +29,13 @@
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
+    "site/**/*.ts",
+    "site/**/*.tsx",
+    "site/**/*.vue",
+    "scripts",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "components/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],
