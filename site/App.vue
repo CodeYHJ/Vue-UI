@@ -30,7 +30,6 @@ const { Header, Content, Aside } = Layout;
 export default {
   name: 'App',
   components: { AsidePage, HeaderPage, Layout, Header, Content, Aside },
-  // components: { Layout, Header },
   setup() {
     const cls = createClass('app');
 

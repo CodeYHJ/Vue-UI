@@ -1,6 +1,7 @@
 export const createClass = (pre?: string) => {
-  const preClass = ["code-ui-example", pre].filter(Boolean).join("-");
+  const preClass = ['code-ui-example', pre].filter(Boolean).join('-');
+
   return function (className?: string) {
-    return [preClass, className].filter(Boolean).join("-");
+    return [preClass, className].filter(Boolean).join('-');
   };
 };
