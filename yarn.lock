@@ -7941,10 +7941,10 @@ node-releases@^1.1.61:
   resolved "https://registry.npm.taobao.org/node-releases/download/node-releases-1.1.61.tgz?cache=0&sync_timestamp=1599612925853&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnode-releases%2Fdownload%2Fnode-releases-1.1.61.tgz#707b0fca9ce4e11783612ba4a2fcba09047af16e"
   integrity sha1-cHsPypzk4ReDYSukovy6CQR68W4=
 
-node@^14.11.0:
-  version "14.11.0"
-  resolved "https://registry.npm.taobao.org/node/download/node-14.11.0.tgz#0a7c6206fa8ce655a7d8251fd6ef07d7c58ffc82"
-  integrity sha1-CnxiBvqM5lWn2CUf1u8H18WP/II=
+node@^14.12.0:
+  version "14.12.0"
+  resolved "https://registry.npm.taobao.org/node/download/node-14.12.0.tgz#4f634bef9e0827fe0df32338c0aad14c72910647"
+  integrity sha1-T2NL754IJ/4N8yM4wKrRTHKRBkc=
   dependencies:
     node-bin-setup "^1.0.0"
 

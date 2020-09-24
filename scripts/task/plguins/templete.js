@@ -4,9 +4,7 @@ const generateIconInfoTemplete = (svgComponent, content) => {
 
 import { SvgInfo } from "../svgInfo"
 
-const ${svgComponent}: SvgInfo =  ${content};
-
-export default  ${svgComponent};
+export const ${svgComponent}: SvgInfo =  ${content};
 
 `;
 
@@ -43,24 +41,22 @@ const generateIconIndexTemplete = () => {
 
 const generateIconBaseTemplete = (tsName, componentName) => {
   const str = `
-    import { defineComponent, h, SVGAttributes } from 'vue';
+    import { defineComponent, h } from 'vue';
 
     import { createClass } from '@/util';
 
-    import info from '../iconInfo/${tsName}Info'
-
-    export interface ${componentName}Props extends SVGAttributes {}
+    import { ${tsName}Info } from '../iconInfo/${tsName}Info'
 
     export default defineComponent({
       name: '${componentName}',
       render() {
         const cls = createClass('svg');
 
-        const childrenList = info.path.map((d: string) =>
-          h('path', { d, key: info.attributes.key + d })
+        const childrenList = ${tsName}Info.path.map((d: string) =>
+          h('path', { d, key: ${tsName}Info.attributes.key + d })
         );
 
-        return h('svg', { class: cls(), ...info.attributes }, childrenList);
+        return h('svg', { class: cls(), ...${tsName}Info.attributes }, childrenList);
       }
     });
 
