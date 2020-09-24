@@ -6,6 +6,7 @@ import Introduction from '../views/Introduction/Introduction.vue';
 
 import GirdExample from '../views/GirdExample/GirdExample.vue';
 
+import IconExample from '../views/IconExample/IconExample.vue';
 
 import Color from '../views/Color/Color.vue';
 
@@ -14,7 +15,8 @@ const routes: Array<RouteRecordRaw> = [
   { path: '/vue/layout', name: 'LayoutExample', component: LayoutExample },
   { path: '/vue/introduction', name: 'Introduction', component: Introduction },
   { path: '/vue/color', name: 'Color', component: Color },
-  { path: '/vue/gird', name: 'Gird', component: GirdExample },
+  { path: '/vue/gird', name: 'GirdExample', component: GirdExample },
+  { path: '/vue/icon', name: 'IconExample', component: IconExample },
 
 ];
 
