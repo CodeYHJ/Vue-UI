@@ -46,7 +46,6 @@ interface ColProps {
 
 export default defineComponent({
   name: 'Col',
-  props: ['span', 'offset', 'sm', 'md', 'lg', 'xl', 'style'],
   setup(props: ColProps) {
     const cls = createClass('col');
 

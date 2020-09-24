@@ -17,7 +17,6 @@ interface RowProps {
 
 export default defineComponent({
   name: 'Row',
-  props: ['justify', 'gutter', 'align'],
   setup(props: RowProps, { slots }) {
     // eslint-disable-next-line vue/no-setup-props-destructure
     const { gutter, justify, align } = props;
@@ -111,8 +110,6 @@ export default defineComponent({
         cloneVNode(vnode, { style: colStyleStr });
       });
     }
-
-    console.log(childrens, '333333');
 
     return {
       className,
