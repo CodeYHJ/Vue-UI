@@ -20,9 +20,9 @@ const greateSvgIconIndexTemplete = content => {
 const generateIconIndexTemplete = () => {
   const str = `
 
-  import I from './LocalIcon.vue'
+  import I from './LocalIcon'
 
-  import c from './createIcon.vue'
+  import c from './createIcon'
 
   export * from './svgIcon'
 
