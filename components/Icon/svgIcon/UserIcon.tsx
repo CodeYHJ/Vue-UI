@@ -1,20 +1,18 @@
-import { defineComponent, h, SVGAttributes } from 'vue';
+import { defineComponent, h } from 'vue';
 
 import { createClass } from '@/util';
 
-import info from '../iconInfo/userInfo';
-
-export type UserIconProps = SVGAttributes;
+import { userInfo } from '../iconInfo/userInfo';
 
 export default defineComponent({
   name: 'UserIcon',
   render() {
     const cls = createClass('svg');
 
-    const childrenList = info.path.map((d: string) =>
-      h('path', { d, key: info.attributes.key + d })
+    const childrenList = userInfo.path.map((d: string) =>
+      h('path', { d, key: userInfo.attributes.key + d })
     );
 
-    return h('svg', { class: cls(), ...info.attributes }, childrenList);
+    return h('svg', { class: cls(), ...userInfo.attributes }, childrenList);
   }
 });

@@ -1,20 +1,18 @@
-import { defineComponent, h, SVGAttributes } from 'vue';
+import { defineComponent, h } from 'vue';
 
 import { createClass } from '@/util';
 
-import info from '../iconInfo/arrorUpInfo';
-
-export type ArrorUpIconProps = SVGAttributes;
+import { arrorUpInfo } from '../iconInfo/arrorUpInfo';
 
 export default defineComponent({
   name: 'ArrorUpIcon',
   render() {
     const cls = createClass('svg');
 
-    const childrenList = info.path.map((d: string) =>
-      h('path', { d, key: info.attributes.key + d })
+    const childrenList = arrorUpInfo.path.map((d: string) =>
+      h('path', { d, key: arrorUpInfo.attributes.key + d })
     );
 
-    return h('svg', { class: cls(), ...info.attributes }, childrenList);
+    return h('svg', { class: cls(), ...arrorUpInfo.attributes }, childrenList);
   }
 });

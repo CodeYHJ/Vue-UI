@@ -1,20 +1,18 @@
-import { defineComponent, h, SVGAttributes } from 'vue';
+import { defineComponent, h } from 'vue';
 
 import { createClass } from '@/util';
 
-import info from '../iconInfo/warnInfo';
-
-export type WarnIconProps = SVGAttributes;
+import { warnInfo } from '../iconInfo/warnInfo';
 
 export default defineComponent({
   name: 'WarnIcon',
   render() {
     const cls = createClass('svg');
 
-    const childrenList = info.path.map((d: string) =>
-      h('path', { d, key: info.attributes.key + d })
+    const childrenList = warnInfo.path.map((d: string) =>
+      h('path', { d, key: warnInfo.attributes.key + d })
     );
 
-    return h('svg', { class: cls(), ...info.attributes }, childrenList);
+    return h('svg', { class: cls(), ...warnInfo.attributes }, childrenList);
   }
 });

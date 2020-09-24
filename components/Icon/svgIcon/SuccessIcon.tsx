@@ -1,20 +1,18 @@
-import { defineComponent, h, SVGAttributes } from 'vue';
+import { defineComponent, h } from 'vue';
 
 import { createClass } from '@/util';
 
-import info from '../iconInfo/successInfo';
-
-export type SuccessIconProps = SVGAttributes;
+import { successInfo } from '../iconInfo/successInfo';
 
 export default defineComponent({
   name: 'SuccessIcon',
   render() {
     const cls = createClass('svg');
 
-    const childrenList = info.path.map((d: string) =>
-      h('path', { d, key: info.attributes.key + d })
+    const childrenList = successInfo.path.map((d: string) =>
+      h('path', { d, key: successInfo.attributes.key + d })
     );
 
-    return h('svg', { class: cls(), ...info.attributes }, childrenList);
+    return h('svg', { class: cls(), ...successInfo.attributes }, childrenList);
   }
 });

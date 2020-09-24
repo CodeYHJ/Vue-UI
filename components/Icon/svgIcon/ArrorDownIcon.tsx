@@ -1,20 +1,22 @@
-import { defineComponent, h, SVGAttributes } from 'vue';
+import { defineComponent, h } from 'vue';
 
 import { createClass } from '@/util';
 
-import info from '../iconInfo/arrorDownInfo';
-
-export type ArrorDownIconProps = SVGAttributes;
+import { arrorDownInfo } from '../iconInfo/arrorDownInfo';
 
 export default defineComponent({
   name: 'ArrorDownIcon',
   render() {
     const cls = createClass('svg');
 
-    const childrenList = info.path.map((d: string) =>
-      h('path', { d, key: info.attributes.key + d })
+    const childrenList = arrorDownInfo.path.map((d: string) =>
+      h('path', { d, key: arrorDownInfo.attributes.key + d })
     );
 
-    return h('svg', { class: cls(), ...info.attributes }, childrenList);
+    return h(
+      'svg',
+      { class: cls(), ...arrorDownInfo.attributes },
+      childrenList
+    );
   }
 });

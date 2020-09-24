@@ -1,20 +1,18 @@
-import { defineComponent, h, SVGAttributes } from 'vue';
+import { defineComponent, h } from 'vue';
 
 import { createClass } from '@/util';
 
-import info from '../iconInfo/loadingInfo';
-
-export type LoadingIconProps = SVGAttributes;
+import { loadingInfo } from '../iconInfo/loadingInfo';
 
 export default defineComponent({
   name: 'LoadingIcon',
   render() {
     const cls = createClass('svg');
 
-    const childrenList = info.path.map((d: string) =>
-      h('path', { d, key: info.attributes.key + d })
+    const childrenList = loadingInfo.path.map((d: string) =>
+      h('path', { d, key: loadingInfo.attributes.key + d })
     );
 
-    return h('svg', { class: cls(), ...info.attributes }, childrenList);
+    return h('svg', { class: cls(), ...loadingInfo.attributes }, childrenList);
   }
 });

@@ -1,20 +1,18 @@
-import { defineComponent, h, SVGAttributes } from 'vue';
+import { defineComponent, h } from 'vue';
 
 import { createClass } from '@/util';
 
-import info from '../iconInfo/codeInfo';
-
-export type CodeIconProps = SVGAttributes;
+import { codeInfo } from '../iconInfo/codeInfo';
 
 export default defineComponent({
   name: 'CodeIcon',
   render() {
     const cls = createClass('svg');
 
-    const childrenList = info.path.map((d: string) =>
-      h('path', { d, key: info.attributes.key + d })
+    const childrenList = codeInfo.path.map((d: string) =>
+      h('path', { d, key: codeInfo.attributes.key + d })
     );
 
-    return h('svg', { class: cls(), ...info.attributes }, childrenList);
+    return h('svg', { class: cls(), ...codeInfo.attributes }, childrenList);
   }
 });

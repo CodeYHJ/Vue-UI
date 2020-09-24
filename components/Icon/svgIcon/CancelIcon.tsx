@@ -1,20 +1,18 @@
-import { defineComponent, h, SVGAttributes } from 'vue';
+import { defineComponent, h } from 'vue';
 
 import { createClass } from '@/util';
 
-import info from '../iconInfo/cancelInfo';
-
-export type CancelIconProps = SVGAttributes;
+import { cancelInfo } from '../iconInfo/cancelInfo';
 
 export default defineComponent({
   name: 'CancelIcon',
   render() {
     const cls = createClass('svg');
 
-    const childrenList = info.path.map((d: string) =>
-      h('path', { d, key: info.attributes.key + d })
+    const childrenList = cancelInfo.path.map((d: string) =>
+      h('path', { d, key: cancelInfo.attributes.key + d })
     );
 
-    return h('svg', { class: cls(), ...info.attributes }, childrenList);
+    return h('svg', { class: cls(), ...cancelInfo.attributes }, childrenList);
   }
 });
