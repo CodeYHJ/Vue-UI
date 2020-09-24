@@ -1,0 +1,54 @@
+@import '../../util/util.less';
+.code-ui-example-exampleBox {
+  border: 1px solid @neutral-color-border;
+  border-radius: 5px;
+  margin-bottom: 60px;
+  flex: 1;
+  &-demo {
+    padding: 40px 32px;
+    border-bottom: 1px solid @neutral-color-border;
+    margin-top: 0 !important;
+  }
+  &-meta {
+    margin-top: 0 !important;
+    position: relative;
+  }
+  &-title {
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    background: #ffffff;
+    color: @neutral-color-title;
+  }
+  &-description {
+    padding: 18px 32px;
+    color: @neutral-color-content;
+  }
+  &-codeIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  & &-codeBox {
+    margin: 10px 0 0 0;
+    padding: 18px 32px;
+    overflow: hidden;
+    color: @neutral-color-content;
+  }
+  & pre {
+    font-family: 'Fira Code Medium', Conolas, monospare, serif;
+  }
+  & &-prism-code {
+    padding: 18px 32px;
+    margin: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  &-code {
+    background: #444;
+
+    // background: gray;
+    padding: 10px 30px;
+  }
+}
