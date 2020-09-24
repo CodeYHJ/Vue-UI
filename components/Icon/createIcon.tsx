@@ -1,4 +1,4 @@
-import Icon from './LocalIcon.vue';
+import Icon from './LocalIcon';
 
 export interface CreateIconProps {
   scriptUrl: string;
