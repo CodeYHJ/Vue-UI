@@ -1,5 +1,5 @@
 <template>
-  <svg :class="cls" {...others}>
+  <svg :class="cls">
     <use :xlinkHref="`#${name}`" />
   </svg>
 </template>
@@ -8,10 +8,6 @@
 import { defineComponent } from 'vue';
 
 import { createClass } from '@/util';
-
-interface LocalIconProps {
-  name: string;
-}
 
 export default defineComponent({
   name: 'LocalIcon',
