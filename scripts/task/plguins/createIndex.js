@@ -60,7 +60,7 @@ const createIndex = () => {
 
         file.basename = 'index';
 
-        file.extname = '.tsx';
+        file.extname = '.ts';
 
         done(null, file);
       } catch (err) {

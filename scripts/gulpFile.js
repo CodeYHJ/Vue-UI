@@ -9,6 +9,8 @@ const {
   handleSvgIndex
 } = require('./task/svgTask');
 
+const { copy2Lib } = require('./task/copy2Lib');
+
 const clean = (dirs, options = { force: true }) => {
   return () => del(dirs, options);
 };
@@ -25,8 +27,8 @@ const envConfig = {
     handleSvgInfoFile,
     handleSvgTsFile,
     handleSvgIcon,
-    handleSvgIndex
-    // copy2Lib,
+    handleSvgIndex,
+    copy2Lib
   ],
   esm: () => [clean([])],
   cjs: () => [clean([])],
