@@ -6,17 +6,24 @@
     <section :class="cls('meta')">
       <div :class="cls('title')">{{ title }}</div>
       <div :class="cls('description')">{{ description }}</div>
+      <CodeIcon :class="cls('codeIcon')" @click="openCode" />
     </section>
-    <PrismComponent :class="cls('prism-code')">{{ code }}</PrismComponent>
+    <transition name="transition">
+      <PrismComponent :class="cls('prism-code')" v-if="open">{{
+        code
+      }}</PrismComponent>
+    </transition>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 
 import { createClass } from '../../util';
 
 import PrismComponent from '../PrismComponent/PrismComponent';
+
+import { CodeIcon } from '@/Icon';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface ExampleBoxProps {
@@ -28,11 +35,17 @@ interface ExampleBoxProps {
 export default defineComponent({
   name: 'ExampleBox',
   props: ['title', 'code', 'description'],
-  components: { PrismComponent },
+  components: { PrismComponent, CodeIcon },
   setup() {
     const cls = createClass('exampleBox');
 
-    return { cls };
+    const open = ref(false);
+
+    const openCode = () => {
+      open.value = !open.value;
+    };
+
+    return { cls, openCode, open };
   }
 });
 </script>
