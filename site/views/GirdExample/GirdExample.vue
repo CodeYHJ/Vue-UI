@@ -13,46 +13,46 @@
       >
         <div :class="cls('rowExample')">
           <Row>
-            <Col span="24">
+            <Col :span="24">
               <div :class="cls('primary')">24</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
           <Row>
-            <Col span="12">
+            <Col :span="12">
               <div :class="cls('light')">12</div>
             </Col>
-            <Col span="12">
+            <Col :span="12">
               <div :class="cls('primary')">12</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
           <Row>
-            <Col span="8">
+            <Col :span="8">
               <div :class="cls('light')">8</div>
             </Col>
-            <Col span="8">
+            <Col :span="8">
               <div :class="cls('primary')">8</div>
             </Col>
-            <Col span="8">
+            <Col :span="8">
               <div :class="cls('light')">8</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
           <Row>
-            <Col span="6">
+            <Col :span="6">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="6">
+            <Col :span="6">
               <div :class="cls('primary')">4</div>
             </Col>
-            <Col span="6">
+            <Col :span="6">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="6">
+            <Col :span="6">
               <div :class="cls('primary')">4</div>
             </Col>
           </Row>
@@ -65,23 +65,23 @@
       >
         <div :class="cls('rowExample')">
           <Row>
-            <Col span="8">
+            <Col :span="8">
               <div :class="cls('light')">8</div>
             </Col>
-            <Col span="8" offset="8">
+            <Col :span="8" :offset="8">
               <div :class="cls('primary')">offset-8</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
           <Row>
-            <Col span="4" offset="1">
+            <Col :span="4" :offset="1">
               <div :class="cls('light')">offset-1</div>
             </Col>
-            <Col span="4" offset="3">
+            <Col :span="4" :offset="3">
               <div :class="cls('primary')">offset-3</div>
             </Col>
-            <Col span="4" offset="5">
+            <Col :span="4" :offset="5">
               <div :class="cls('light')">offset-5</div>
             </Col>
           </Row>
@@ -93,24 +93,24 @@
         :code="gutterCodeStr"
       >
         <div :class="cls('rowExample')">
-          <Row gutter="12">
-            <Col span="8">
+          <Row :gutter="12">
+            <Col :span="8">
               <div :class="cls('light')">8</div>
             </Col>
-            <Col span="8">
+            <Col :span="8">
               <div :class="cls('primary')">8</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
           <Row :gutter="[12, 24]">
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('primary')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
           </Row>
@@ -123,65 +123,65 @@
       >
         <div :class="cls('rowExample')">
           <Row justify="start">
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('primary')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
           <Row justify="center">
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('primary')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
           <Row justify="end">
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('primary')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
           <Row justify="space-around">
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('primary')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
           <Row justify="space-between">
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('primary')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light')">4</div>
             </Col>
           </Row>
@@ -193,40 +193,40 @@
         :code="alignCodeStr"
       >
         <div :class="cls('rowExample')">
-          <Row :align="top" gutter="24">
-            <Col span="4">
+          <Row align="top" :gutter="24">
+            <Col :span="4">
               <div :class="cls('light-align')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('primary-align')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light-align')">4</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
-          <Row :align="middle" gutter="24">
-            <Col span="4">
+          <Row align="middle" :gutter="24">
+            <Col :span="4">
               <div :class="cls('light-align')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('primary-align')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light-align')">4</div>
             </Col>
           </Row>
         </div>
         <div :class="cls('rowExample')">
-          <Row align="bottom" gutter="{24}">
-            <Col span="4">
+          <Row align="bottom" :gutter="24">
+            <Col :span="4">
               <div :class="cls('light-align')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('primary-align')">4</div>
             </Col>
-            <Col span="4">
+            <Col :span="4">
               <div :class="cls('light-align')">4</div>
             </Col>
           </Row>
@@ -238,23 +238,23 @@
         :code="responsiveCodeStr"
       >
         <div :class="cls('rowExample')">
-          <Row gutter="12">
-            <Col span="4" sm="4" md="2" lg="4" xl="1">
+          <Row :gutter="12">
+            <Col :span="4" :sm="4" :md="2" :lg="4" :xl="1">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="4" sm="4" md="4" lg="4" xl="2">
+            <Col :span="4" :sm="4" :md="4" :lg="4" :xl="2">
               <div :class="cls('primary')">4</div>
             </Col>
-            <Col span="4" sm="4" md="3" lg="4" xl="3">
+            <Col :span="4" :sm="4" :md="3" :lg="4" :xl="3">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="4" sm="4" md="1" lg="4" xl="4">
+            <Col :span="4" :sm="4" :md="1" :lg="4" :xl="4">
               <div :class="cls('primary')">4</div>
             </Col>
-            <Col span="4" sm="4" md="2" lg="4" xl="5">
+            <Col :span="4" :sm="4" :md="2" :lg="4" :xl="5">
               <div :class="cls('light')">4</div>
             </Col>
-            <Col span="4" sm="4" md="5" lg="4" xl="6">
+            <Col :span="4" :sm="4" :md="5" :lg="4" :xl="6">
               <div :class="cls('primary')">4</div>
             </Col>
           </Row>
@@ -262,8 +262,8 @@
       </ExampleBox>
     </section>
     <h2>Api</h2>
-    <ExampleApi title="Row" data="{handleRowData}"></ExampleApi>
-    <ExampleApi title="Col" data="{handleColData}"></ExampleApi>
+    <!--    <ExampleApi title="Row" data="{handleRowData}"></ExampleApi>-->
+    <!--    <ExampleApi title="Col" data="{handleColData}"></ExampleApi>-->
   </div>
 </template>
 
