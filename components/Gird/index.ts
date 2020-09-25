@@ -1,6 +1,6 @@
-import r from './Row.vue';
+import r from './Row';
 
-import c from './Col.vue';
+import c from './Col';
 
 type RowType = typeof r & { Col: typeof c };
 

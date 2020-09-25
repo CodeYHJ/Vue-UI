@@ -1,13 +1,8 @@
-<template>
-  <div :class="clsStr" :style="style">
-    <slot />
-  </div>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, PropType } from 'vue';
 
 import { createClass } from '@/util';
+
+import './style/Col.less';
 
 type Num =
   | 1
@@ -35,18 +30,17 @@ type Num =
   | 23
   | 24;
 
-interface ColProps {
-  span?: Num;
-  offset?: Num;
-  sm?: Num;
-  md?: Num;
-  lg?: Num;
-  xl?: Num;
-}
-
-export default defineComponent({
+const Col = defineComponent({
   name: 'Col',
-  setup(props: ColProps) {
+  props: {
+    span: { type: Number as PropType<Num> },
+    offset: { type: Number as PropType<Num> },
+    sm: { type: Number as PropType<Num> },
+    md: { type: Number as PropType<Num> },
+    lg: { type: Number as PropType<Num> },
+    xl: { type: Number as PropType<Num> }
+  },
+  setup(props) {
     const cls = createClass('col');
 
     // eslint-disable-next-line vue/no-setup-props-destructure
@@ -95,16 +89,20 @@ export default defineComponent({
       smClass,
       mdClass,
       lgClass,
-      xlClass
+      xlClass,
     ]
       .filter(Boolean)
       .join(' ');
 
     return { clsStr };
-  }
-});
-</script>
+  },
+  render() {
+    const { clsStr } = this;
 
-<style lang="less">
-@import './style/Col';
-</style>
+    const childrens = this.$slots.default && this.$slots.default();
+
+    return <div class={clsStr}>{childrens}</div>;
+  },
+});
+
+export default Col;

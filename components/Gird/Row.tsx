@@ -1,23 +1,25 @@
-<template>
-  <div :class="className" :style="rowStyleStr">
-    <slot />
-  </div>
-</template>
-
-<script lang="ts">
-import { defineComponent, cloneVNode } from 'vue';
+import { defineComponent, cloneVNode, VNode, PropType } from 'vue';
 
 import { createClass } from '@/util';
 
-interface RowProps {
-  justify?: 'start' | 'end' | 'center' | 'space-around' | 'space-between';
-  gutter?: number | number[];
-  align?: 'top' | 'middle' | 'bottom';
-}
+import './style/Row.less';
 
 export default defineComponent({
   name: 'Row',
-  setup(props: RowProps, { slots }) {
+  props: {
+    justify: {
+      type: String as PropType<
+        'start' | 'end' | 'center' | 'space-around' | 'space-between'
+      >
+    },
+    gutter: {
+      type: [Number,Object] as PropType<number | number[]>
+    },
+    align: {
+      type: String as PropType<'top' | 'middle' | 'bottom'>
+    }
+  },
+  setup(props) {
     // eslint-disable-next-line vue/no-setup-props-destructure
     const { gutter, justify, align } = props;
 
@@ -103,22 +105,25 @@ export default defineComponent({
 
     const className = [cls(), justifyCls, align].filter(Boolean).join(' ');
 
-    const childrens = slots.default && slots.default();
+    return { colStyleStr, rowStyleStr, className, justifyCls };
+  },
+  render() {
+    const { colStyleStr, className, rowStyleStr } = this;
+
+    const childrens = this.$slots.default && this.$slots.default();
+
+    const cloneList: VNode[] = [];
 
     if (Array.isArray(childrens)) {
       childrens.forEach(vnode => {
-        cloneVNode(vnode, { style: colStyleStr });
+        cloneList.push(cloneVNode(vnode, { style: colStyleStr}));
       });
     }
 
-    return {
-      className,
-      rowStyleStr
-    };
-  }
+    return (
+      <div class={className} style={rowStyleStr}>
+        {cloneList}
+      </div>
+    );
+  },
 });
-</script>
-
-<style lang="less">
-@import './style/Row';
-</style>
