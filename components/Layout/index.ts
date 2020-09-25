@@ -1,12 +1,12 @@
-import {default as L} from './Layout.vue'
+import {default as L} from './Layout'
 
-import {default as H} from './Header.vue'
+import {default as H} from './Header'
 
-import {default as F} from './Footer.vue'
+import {default as F} from './Footer'
 
-import {default as C} from './Content.vue'
+import {default as C} from './Content'
 
-import {default as A} from './Aside.vue'
+import {default as A} from './Aside'
 
 type LayoutStyle = typeof L & { Header: typeof H, Content: typeof C, Footer: typeof F, Aside: typeof A }
 
