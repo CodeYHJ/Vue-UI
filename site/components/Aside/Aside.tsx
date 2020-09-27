@@ -1,11 +1,15 @@
 import { defineComponent } from 'vue';
+
 import { createClass } from '../../util';
 
+import './index.less';
+
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface AsideProps {}
 
-export default defineComponent({
+export default defineComponent<AsideProps>({
   name: 'Aside',
-  setup(props: AsideProps, { slots, attrs }) {
+  setup() {
     const cls = createClass('aside');
 
     return () => (
@@ -13,7 +17,7 @@ export default defineComponent({
         <h3 class={cls('title')}>组件</h3>
         <ul class={cls('ul')}>
           <li class={cls('li')}>
-            <router-link className={cls('navLink')} to="/vue/introduction">
+            <router-link class={cls('navLink')} to="/vue/introduction">
               Introduction
             </router-link>
           </li>
@@ -28,22 +32,22 @@ export default defineComponent({
             </router-link>
           </li>
           <li class={cls('li')}>
-            <router-link className={cls('navLink')} to="/vue/gird">
+            <router-link class={cls('navLink')} to="/vue/gird">
               Gird
             </router-link>
           </li>
           <li class={cls('li')}>
-            <router-link className={cls('navLink')} to="/vue/button">
+            <router-link class={cls('navLink')} to="/vue/button">
               Button
             </router-link>
           </li>
           <li class={cls('li')}>
-            <router-link className={cls('navLink')} to="/vue/icon">
+            <router-link class={cls('navLink')} to="/vue/icon">
               Icon
             </router-link>
           </li>
           <li class={cls('li')}>
-            <router-link className={cls('navLink')} to="/vue/modal">
+            <router-link class={cls('navLink')} to="/vue/modal">
               Modal
             </router-link>
           </li>
