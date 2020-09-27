@@ -24,7 +24,7 @@ const generateIconIndexTemplete = () => {
 
   import c from './createIcon'
 
-  export * from './svgIcon'
+  export * from './svgIcon/index'
 
   type IconType = typeof I & { createIcon: typeof c }
 
@@ -41,13 +41,16 @@ const generateIconIndexTemplete = () => {
 
 const generateIconBaseTemplete = (tsName, componentName) => {
   const str = `
-    import { defineComponent, h } from 'vue';
+    import { defineComponent, h, SVGAttributes } from 'vue';
 
     import { createClass } from '@/util';
 
     import { ${tsName}Info } from '../iconInfo/${tsName}Info'
 
-    export default defineComponent({
+    export interface ${componentName}Props extends SVGAttributes {
+    }
+
+    export default defineComponent<${componentName}Props>({
       name: '${componentName}',
       render() {
         const cls = createClass('svg');
