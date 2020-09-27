@@ -1,4 +1,4 @@
-import { defineComponent, SVGAttributes } from 'vue';
+import { defineComponent, SVGAttributes, toRefs } from 'vue';
 
 import { createClass } from '@/util';
 
@@ -10,17 +10,17 @@ interface LocalIconProps extends SVGAttributes {
 
 export default defineComponent<LocalIconProps>({
   name: 'LocalIcon',
-  setup(props) {
+  setup(props, { attrs }) {
     const cls = createClass('svg');
 
-    const name = `#${props.name}`;
+    const getAttrs = toRefs(attrs as Record<string, string>);
 
-    console.log(props, '3333');
+    const name = getAttrs.name;
 
     return () => (
       <svg class={cls()}>
-        <use href={name} />
+        <use href={'#'+name.value} />
       </svg>
     );
-  }
+  },
 });
