@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
-import LayoutExample from '../views/LayoutExample/LayoutExample.vue';
+import LayoutExample from '../views/LayoutExample/LayoutExample';
 
-import Introduction from '../views/Introduction/Introduction.vue';
+import Introduction from '../views/Introduction/Introduction';
 
-import GirdExample from '../views/GirdExample/GirdExample.vue';
+import GirdExample from '../views/GirdExample/GirdExample';
 
-import IconExample from '../views/IconExample/IconExample.vue';
+import IconExample from '../views/IconExample/IconExample';
 
-import Color from '../views/Color/Color.vue';
+import Color from '../views/Color/Color';
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/', redirect: '/vue/layout' },
