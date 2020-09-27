@@ -1,4 +1,6 @@
-import { defineComponent, ref,VNodeProps } from 'vue';
+import { defineComponent, ref } from 'vue';
+
+import "./index.less"
 
 import PrismComponent from '../PrismComponent/PrismComponent';
 
@@ -9,20 +11,12 @@ import { createClass } from '../../util';
 export default defineComponent({
   name: 'ExampleBox',
   props: {
-    title: {
-      type: String,
-      require: true
-    },
-    code: {
-      type: String,
-      require: true
-    },
-    description: {
-      type: String,
-      require: true
-    }
+    title: String,
+    code: String,
+    description: String
   },
-  setup() {
+  components: { PrismComponent },
+  setup(props, { slots }) {
     const cls = createClass('exampleBox');
 
     const open = ref<boolean>(false);
@@ -31,27 +25,17 @@ export default defineComponent({
       open.value = !open.value;
     };
 
-    return { cls, open, openCode };
-  },
-  render() {
-    const { cls, open, openCode, title, description, code } = this;
-
-    const childrens = this.$slots.default && this.$slots.default();
-
-    return (
+    return () => (
       <div class={cls()}>
-        <section class={cls('demo')}>{childrens}</section>
+        <section class={cls('demo')}>{ slots.default && slots.default()}</section>
         <section class={cls('meta')}>
-          <div class={cls('title')}>{{ title }}</div>
-          <div class={cls('description')}>{{ description }}</div>
+          <div class={cls('title')}>{props.title}</div>
+          <div class={cls('description')}>{props.description}</div>
           <CodeIcon class={cls('codeIcon')} onClick={openCode} />
         </section>
-        <transition name="transition">
-          <PrismComponent class={cls('prism-code')} v-if={open}>
-            {{ code }}
-          </PrismComponent>
-        </transition>
-
+          {open.value ? (
+            <PrismComponent class={cls('prism-code')} code={props.code} />
+          ) : null}
       </div>
     );
   }
