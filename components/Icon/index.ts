@@ -2,7 +2,7 @@ import I from './LocalIcon';
 
 import c from './createIcon';
 
-export * from './svgIcon';
+export * from './svgIcon/index';
 
 type IconType = typeof I & { createIcon: typeof c };
 

@@ -1,10 +1,12 @@
-import { defineComponent, h } from 'vue';
+import { defineComponent, h, SVGAttributes } from 'vue';
 
 import { createClass } from '@/util';
 
 import { passwordInfo } from '../iconInfo/passwordInfo';
 
-export default defineComponent({
+export type PasswordIconProps = SVGAttributes;
+
+export default defineComponent<PasswordIconProps>({
   name: 'PasswordIcon',
   render() {
     const cls = createClass('svg');

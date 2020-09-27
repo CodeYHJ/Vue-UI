@@ -1,17 +1,15 @@
-import { defineComponent } from 'vue';
+import { defineComponent, SVGAttributes } from 'vue';
 
 import { createClass } from '@/util';
 
 import './style/index.less';
 
-export default defineComponent({
+interface LocalIconProps extends SVGAttributes {
+  name: string;
+}
+
+export default defineComponent<LocalIconProps>({
   name: 'LocalIcon',
-  props: {
-    name: {
-      type: String,
-      require: true,
-    },
-  },
   setup(props) {
     const cls = createClass('svg');
 
@@ -24,5 +22,5 @@ export default defineComponent({
         <use href={name} />
       </svg>
     );
-  },
+  }
 });

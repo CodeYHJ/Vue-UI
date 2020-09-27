@@ -1,10 +1,12 @@
-import { defineComponent, h } from 'vue';
+import { defineComponent, h, SVGAttributes } from 'vue';
 
 import { createClass } from '@/util';
 
 import { cancelInfo } from '../iconInfo/cancelInfo';
 
-export default defineComponent({
+export type CancelIconProps = SVGAttributes;
+
+export default defineComponent<CancelIconProps>({
   name: 'CancelIcon',
   render() {
     const cls = createClass('svg');

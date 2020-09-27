@@ -1,10 +1,12 @@
-import { defineComponent, h } from 'vue';
+import { defineComponent, h, SVGAttributes } from 'vue';
 
 import { createClass } from '@/util';
 
 import { successInfo } from '../iconInfo/successInfo';
 
-export default defineComponent({
+export type SuccessIconProps = SVGAttributes;
+
+export default defineComponent<SuccessIconProps>({
   name: 'SuccessIcon',
   render() {
     const cls = createClass('svg');

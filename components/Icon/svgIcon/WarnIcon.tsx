@@ -1,10 +1,12 @@
-import { defineComponent, h } from 'vue';
+import { defineComponent, h, SVGAttributes } from 'vue';
 
 import { createClass } from '@/util';
 
 import { warnInfo } from '../iconInfo/warnInfo';
 
-export default defineComponent({
+export type WarnIconProps = SVGAttributes;
+
+export default defineComponent<WarnIconProps>({
   name: 'WarnIcon',
   render() {
     const cls = createClass('svg');

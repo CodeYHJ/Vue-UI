@@ -1,10 +1,12 @@
-import { defineComponent, h } from 'vue';
+import { defineComponent, h, SVGAttributes } from 'vue';
 
 import { createClass } from '@/util';
 
 import { mainInfo } from '../iconInfo/mainInfo';
 
-export default defineComponent({
+export type MainIconProps = SVGAttributes;
+
+export default defineComponent<MainIconProps>({
   name: 'MainIcon',
   render() {
     const cls = createClass('svg');

@@ -1,10 +1,12 @@
-import { defineComponent, h } from 'vue';
+import { defineComponent, h, SVGAttributes } from 'vue';
 
 import { createClass } from '@/util';
 
 import { arrorRightInfo } from '../iconInfo/arrorRightInfo';
 
-export default defineComponent({
+export type ArrorRightIconProps = SVGAttributes;
+
+export default defineComponent<ArrorRightIconProps>({
   name: 'ArrorRightIcon',
   render() {
     const cls = createClass('svg');

@@ -1,10 +1,12 @@
-import { defineComponent, h } from 'vue';
+import { defineComponent, h, SVGAttributes } from 'vue';
 
 import { createClass } from '@/util';
 
 import { loadingInfo } from '../iconInfo/loadingInfo';
 
-export default defineComponent({
+export type LoadingIconProps = SVGAttributes;
+
+export default defineComponent<LoadingIconProps>({
   name: 'LoadingIcon',
   render() {
     const cls = createClass('svg');

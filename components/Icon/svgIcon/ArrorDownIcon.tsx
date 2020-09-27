@@ -1,10 +1,12 @@
-import { defineComponent, h } from 'vue';
+import { defineComponent, h, SVGAttributes } from 'vue';
 
 import { createClass } from '@/util';
 
 import { arrorDownInfo } from '../iconInfo/arrorDownInfo';
 
-export default defineComponent({
+export type ArrorDownIconProps = SVGAttributes;
+
+export default defineComponent<ArrorDownIconProps>({
   name: 'ArrorDownIcon',
   render() {
     const cls = createClass('svg');
