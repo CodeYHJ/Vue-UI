@@ -12,7 +12,7 @@ export default defineComponent<CancelIconProps>({
     const cls = createClass('svg');
 
     const childrenList = cancelInfo.path.map((d: string) =>
-      h('path', { d, key: cancelInfo.attributes.key + d })
+      h('path', { class: cls(), d, key: cancelInfo.attributes.key + d })
     );
 
     return h('svg', { class: cls(), ...cancelInfo.attributes }, childrenList);

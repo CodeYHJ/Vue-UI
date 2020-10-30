@@ -12,7 +12,7 @@ export default defineComponent<DangerIconProps>({
     const cls = createClass('svg');
 
     const childrenList = dangerInfo.path.map((d: string) =>
-      h('path', { d, key: dangerInfo.attributes.key + d })
+      h('path', { class: cls(), d, key: dangerInfo.attributes.key + d })
     );
 
     return h('svg', { class: cls(), ...dangerInfo.attributes }, childrenList);

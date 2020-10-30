@@ -56,7 +56,7 @@ const generateIconBaseTemplete = (tsName, componentName) => {
         const cls = createClass('svg');
 
         const childrenList = ${tsName}Info.path.map((d: string) =>
-          h('path', { d, key: ${tsName}Info.attributes.key + d })
+          h('path', { class: cls(), d, key: ${tsName}Info.attributes.key + d })
         );
 
         return h('svg', { class: cls(), ...${tsName}Info.attributes }, childrenList);

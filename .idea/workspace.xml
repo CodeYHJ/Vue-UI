@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec313851-47c5-4f56-b190-0f547ec9bc7a" name="Default Changelist" comment="svg生成组件">
+      <change afterPath="$PROJECT_DIR$/components/Button/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Button/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Button/style/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Button/style/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/ButtonExample.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/code/BaseCode.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/code/BaseCode.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/code/DisabledCode.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/code/DisabledCode.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/code/LoadingCode.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/code/LoadingCode.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/code/PreFixCode.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/code/PreFixCode.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/ButttonExample/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/PrismComponent/PrismComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/PrismComponent/PrismComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/site/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="Vue Component" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hnx638G36OOYrbIdpgwukJSnPc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/site/views/ButttonExample" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\HaoJie\AppData\Roaming\npm\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\HaoJie\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="ts.external.directory.path" value="C:\code\vue-ui\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\vue-ui\site\views\ButttonExample" />
+      <recent name="C:\code\vue-ui\site\views\LayoutExample" />
+      <recent name="C:\code\vue-ui\site\views" />
+      <recent name="C:\code\vue-ui\scripts" />
+      <recent name="C:\code\vue-ui\site" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\vue-ui\site\views\ButttonExample" />
+      <recent name="C:\code\vue-ui\components\Button" />
+      <recent name="C:\code\vue-ui\site\views\IconExample" />
+      <recent name="C:\code\vue-ui" />
+      <recent name="C:\code\vue-ui\components\Icon" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec313851-47c5-4f56-b190-0f547ec9bc7a" name="Default Changelist" comment="" />
+      <created>1600660479034</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600660479034</updated>
+      <workItem from="1600660482084" duration="958000" />
+      <workItem from="1600661448547" duration="1999000" />
+      <workItem from="1600663529655" duration="4954000" />
+      <workItem from="1600680848677" duration="3295000" />
+      <workItem from="1600744250766" duration="10511000" />
+      <workItem from="1600761624373" duration="557000" />
+      <workItem from="1600762203362" duration="730000" />
+      <workItem from="1600762949282" duration="884000" />
+      <workItem from="1600842734776" duration="3104000" />
+      <workItem from="1600846723601" duration="24000" />
+      <workItem from="1600916652762" duration="8651000" />
+      <workItem from="1600929259561" duration="5339000" />
+      <workItem from="1600935252112" duration="1873000" />
+      <workItem from="1601002820494" duration="17975000" />
+      <workItem from="1601175798689" duration="24283000" />
+      <workItem from="1601260617963" duration="14116000" />
+      <workItem from="1601434264647" duration="600000" />
+    </task>
+    <task id="LOCAL-00001" summary="基本框架搭建">
+      <created>1600759860656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600759860656</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Example模板搭建 Base">
+      <created>1600918184223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600918184223</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Example模板搭建 Base">
+      <created>1600918300740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600918300740</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Gird 组件调整">
+      <created>1600918356703</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600918356703</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Icon 组件基础搭建">
+      <created>1600918399388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600918399388</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gulp 生成 Icon 基础逻辑">
+      <created>1600928671324</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600928671324</updated>
+    </task>
+    <task id="LOCAL-00007" summary="gulp 生成icon逻辑调整">
+      <created>1600930212858</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600930212859</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Icon 组件调整">
+      <created>1600931762078</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600931762079</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1、Icon 模板调整&#10;2、配置整理">
+      <created>1600933205152</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600933205152</updated>
+    </task>
+    <task id="LOCAL-00010" summary="svg生成组件">
+      <created>1600933345570</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1600933345570</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Icon 组件写法调整">
+      <created>1600935743447</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600935743447</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Icon 生成模板修改">
+      <created>1600935767881</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1600935767881</updated>
+    </task>
+    <task id="LOCAL-00013" summary="IconExample 初始版">
+      <created>1600935869452</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1600935869452</updated>
+    </task>
+    <task id="LOCAL-00014" summary="LayoutExample 初始版">
+      <created>1600937096757</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1600937096757</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Gird 组件转TSX格式">
+      <created>1601026172435</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1601026172435</updated>
+    </task>
+    <task id="LOCAL-00016" summary="GirdExample 组件修改">
+      <created>1601026227401</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1601026227401</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Layout 组件转换未TSX">
+      <created>1601027462074</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1601027462074</updated>
+    </task>
+    <task id="LOCAL-00018" summary="组件转换未TSX（未成功）">
+      <created>1601029799844</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1601029799844</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Icon 组件调整">
+      <created>1601191484842</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1601191484842</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Icon 模板调整">
+      <created>1601191517629</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1601191517629</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Icon 组件props传递调整">
+      <created>1601196431849</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196431849</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Aside 组件转TSX">
+      <created>1601196467220</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196467220</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ExampleBox 组件转TSX">
+      <created>1601196489602</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196489602</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Header 组件转TSX">
+      <created>1601196517577</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196517577</updated>
+    </task>
+    <task id="LOCAL-00025" summary="PrismComponent 组件转props 传递调整">
+      <created>1601196551018</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196551018</updated>
+    </task>
+    <task id="LOCAL-00026" summary="路由内所有组件引入为TSX格式">
+      <created>1601196580238</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196580238</updated>
+    </task>
+    <task id="LOCAL-00027" summary="App组件转换为TSX">
+      <created>1601196617480</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196617480</updated>
+    </task>
+    <task id="LOCAL-00028" summary="LayoutExample组件转换为TSX">
+      <created>1601196642565</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196642565</updated>
+    </task>
+    <task id="LOCAL-00029" summary="IntroductionExample组件转换为TSX">
+      <created>1601196657642</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196657642</updated>
+    </task>
+    <task id="LOCAL-00030" summary="IconExample组件转换为TSX">
+      <created>1601196665831</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196665831</updated>
+    </task>
+    <task id="LOCAL-00031" summary="GirdExample组件转换为TSX">
+      <created>1601196676209</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196676209</updated>
+    </task>
+    <task id="LOCAL-00032" summary="ColorExample组件转换为TSX">
+      <created>1601196685772</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1601196685772</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1、Icon 模板调整&#10;2、命令行配置整理" />
+    <MESSAGE value="1、Icon 模板调整&#10;2、配置整理" />
+    <MESSAGE value="svg生成组件" />
+    <MESSAGE value="Icon 组件写法调整" />
+    <MESSAGE value="Icon 生成模板修改" />
+    <MESSAGE value="IconExample 初始版" />
+    <MESSAGE value="LayoutExample 初始版" />
+    <MESSAGE value="Gird 组件转TSX格式" />
+    <MESSAGE value="GirdExample 组件修改" />
+    <MESSAGE value="Layout 组件转换未TSX" />
+    <MESSAGE value="组件转换未TSX（未成功）" />
+    <MESSAGE value="Icon 组件调整" />
+    <MESSAGE value="Icon 模板调整" />
+    <MESSAGE value="Icon 组件props传递调整" />
+    <MESSAGE value="Aside 组件转TSX" />
+    <MESSAGE value="ExampleBox 组件转TSX" />
+    <MESSAGE value="Header 组件转TSX" />
+    <MESSAGE value="PrismComponent 组件转props 传递调整" />
+    <MESSAGE value="路由内所有组件引入为TSX格式" />
+    <MESSAGE value="App组件转换为TSX" />
+    <MESSAGE value="LayoutExample组件转换为TSX" />
+    <MESSAGE value="IntroductionExample组件转换为TSX" />
+    <MESSAGE value="IconExample组件转换为TSX" />
+    <MESSAGE value="GirdExample组件转换为TSX" />
+    <MESSAGE value="ColorExample组件转换为TSX" />
+    <option name="LAST_COMMIT_MESSAGE" value="ColorExample组件转换为TSX" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2574" y="241" key="#ESLint" timestamp="1600936831381">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2574" y="241" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600936831381" />
+    <state x="2621" y="317" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600748072999">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2621" y="317" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600748072999" />
+    <state x="2540" y="361" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1601193664657">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2540" y="361" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601193664657" />
+    <state x="2103" y="85" key="DiffContextDialog" timestamp="1601027472479">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2103" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601027472479" />
+    <state x="2659" y="273" key="FileChooserDialogImpl" timestamp="1600846076330">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2659" y="273" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600846076330" />
+    <state x="2459" y="253" key="IDE.errors.dialog" timestamp="1600671515969">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2459" y="253" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600671515969" />
+    <state x="2706" y="138" key="RollbackChangesDialog" timestamp="1601263838787">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2706" y="138" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601263838787" />
+    <state x="2380" y="163" key="SettingsEditor" timestamp="1600929313734">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2380" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600929313734" />
+    <state x="2471" y="249" key="Vcs.Push.Dialog.v2" timestamp="1601196692006">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2471" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601196692006" />
+    <state x="2882" y="195" width="596" height="618" key="find.popup" timestamp="1601192146709">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2882" y="195" width="596" height="618" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601192146709" />
+    <state x="2543" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1601199288662">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601199288662" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/site/components/Aside/Aside.vue</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

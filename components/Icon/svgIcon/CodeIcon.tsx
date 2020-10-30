@@ -12,7 +12,7 @@ export default defineComponent<CodeIconProps>({
     const cls = createClass('svg');
 
     const childrenList = codeInfo.path.map((d: string) =>
-      h('path', { d, key: codeInfo.attributes.key + d })
+      h('path', { class: cls(), d, key: codeInfo.attributes.key + d })
     );
 
     return h('svg', { class: cls(), ...codeInfo.attributes }, childrenList);

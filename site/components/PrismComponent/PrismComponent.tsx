@@ -10,7 +10,7 @@ export default defineComponent({
     code: String
   },
   setup( props ) {
-    const className = `language-html`;
+    const className = `language-jsx`;
 
     const html = Prism.highlight(props.code||'', Prism.languages.html, 'html');
 

@@ -12,7 +12,7 @@ export default defineComponent<ArrorRightIconProps>({
     const cls = createClass('svg');
 
     const childrenList = arrorRightInfo.path.map((d: string) =>
-      h('path', { d, key: arrorRightInfo.attributes.key + d })
+      h('path', { class: cls(), d, key: arrorRightInfo.attributes.key + d })
     );
 
     return h(

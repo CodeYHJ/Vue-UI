@@ -12,7 +12,7 @@ export default defineComponent<PasswordIconProps>({
     const cls = createClass('svg');
 
     const childrenList = passwordInfo.path.map((d: string) =>
-      h('path', { d, key: passwordInfo.attributes.key + d })
+      h('path', { class: cls(), d, key: passwordInfo.attributes.key + d })
     );
 
     return h('svg', { class: cls(), ...passwordInfo.attributes }, childrenList);

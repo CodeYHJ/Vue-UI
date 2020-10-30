@@ -12,7 +12,7 @@ export default defineComponent<LoadingIconProps>({
     const cls = createClass('svg');
 
     const childrenList = loadingInfo.path.map((d: string) =>
-      h('path', { d, key: loadingInfo.attributes.key + d })
+      h('path', { class: cls(), d, key: loadingInfo.attributes.key + d })
     );
 
     return h('svg', { class: cls(), ...loadingInfo.attributes }, childrenList);

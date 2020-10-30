@@ -12,7 +12,7 @@ export default defineComponent<WarnIconProps>({
     const cls = createClass('svg');
 
     const childrenList = warnInfo.path.map((d: string) =>
-      h('path', { d, key: warnInfo.attributes.key + d })
+      h('path', { class: cls(), d, key: warnInfo.attributes.key + d })
     );
 
     return h('svg', { class: cls(), ...warnInfo.attributes }, childrenList);

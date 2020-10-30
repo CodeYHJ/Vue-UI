@@ -12,7 +12,7 @@ export default defineComponent<UserIconProps>({
     const cls = createClass('svg');
 
     const childrenList = userInfo.path.map((d: string) =>
-      h('path', { d, key: userInfo.attributes.key + d })
+      h('path', { class: cls(), d, key: userInfo.attributes.key + d })
     );
 
     return h('svg', { class: cls(), ...userInfo.attributes }, childrenList);

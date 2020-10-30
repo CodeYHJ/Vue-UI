@@ -5,7 +5,7 @@ import { createClass } from '../../util';
 import './index.less';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface AsideProps {}
+interface AsideProps { }
 
 export default defineComponent<AsideProps>({
   name: 'Aside',
@@ -51,7 +51,7 @@ export default defineComponent<AsideProps>({
               Modal
             </router-link>
           </li>
-          <li class={cls('li')}>
+          {/* <li class={cls('li')}>
             <router-link class={cls('navLink')} to="/vue/form">
               Form
             </router-link>
@@ -60,7 +60,7 @@ export default defineComponent<AsideProps>({
             <router-link class={cls('navLink')} to="/vue/input">
               Input
             </router-link>
-          </li>
+          </li> */}
         </ul>
       </div>
     );

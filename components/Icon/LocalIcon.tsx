@@ -19,8 +19,8 @@ export default defineComponent<LocalIconProps>({
 
     return () => (
       <svg class={cls()}>
-        <use href={'#'+name.value} />
+        <use href={'#' + name.value} />
       </svg>
     );
-  },
+  }
 });

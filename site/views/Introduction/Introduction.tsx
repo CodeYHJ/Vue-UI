@@ -5,7 +5,7 @@ import "./index.less"
 import { createClass } from '../../util';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface IntroductionProps {}
+interface IntroductionProps { }
 
 export default defineComponent<IntroductionProps>({
   name: 'Introduction',
@@ -27,8 +27,7 @@ export default defineComponent<IntroductionProps>({
         <section class={cls('section')}>
           <h1 class={cls('h1')}>没有其他依赖</h1>
           <p class={cls('p')}>
-            核心Vue
-            3.0。TypeScript进行静态类型支持，Jest进行相关测试支持，没有其他依赖
+            核心Vue 3.0。TypeScript进行静态类型支持，没有其他依赖
           </p>
         </section>
       </div>
