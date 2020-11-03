@@ -8,18 +8,29 @@ import { Button } from '../../../components/index';
 
 import ExampleBox from '../../components/ExampleBox/ExampleBox';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const baseCode = require('!!raw-loader!./code/BaseCode.vue');
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const customize = require('!!raw-loader!./code/Customize.vue');
+
 import "./index.less";
 
 export default defineComponent({
   name: 'ModalExample',
+  components: {
+    ExampleBox
+  },
   setup() {
     const cls = createClass('modal');
+
+    const baseCodeStr = baseCode && baseCode.default;
+
+    const customizeStr = customize && customize.default;
 
     const showModal = ref(false);
 
     const showModal1 = ref(false);
-
-    const showModal2 = ref(false);
 
     const openVisible = () => {
       showModal.value = true;
@@ -56,19 +67,24 @@ export default defineComponent({
           <ExampleBox
             title="基本"
             description="组件方式使用，通过控制visible属性来显示or隐藏"
+            code={baseCodeStr}
           >
-            <Modal
-              headerText="基本"
-              visible={showModal.value}
-              closeFn={closeVisible}
-            >Modal</Modal>
-            <Button type="primary" onClick={openVisible}> open Modal</Button>
+            <div>
+              <Modal
+                headerText="基本"
+                visible={showModal.value}
+                closeFn={closeVisible}
+              >Modal</Modal>
+              <Button type="primary" onClick={openVisible}> open Modal</Button>
+            </div>
+
           </ExampleBox>
         </section>
         <section>
           <ExampleBox
             title="自定义"
             description="自定义header、footer。不需要header可不传"
+            code={customizeStr}
           >
             <Modal
               visible={showModal1.value}
