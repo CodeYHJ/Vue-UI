@@ -1,14 +1,19 @@
-import {default as L} from './Layout'
+import { default as L } from './Layout';
 
-import {default as H} from './Header'
+import { default as H } from './Header';
 
-import {default as F} from './Footer'
+import { default as F } from './Footer';
 
-import {default as C} from './Content'
+import { default as C } from './Content';
 
-import {default as A} from './Aside'
+import { default as A } from './Aside';
 
-type LayoutStyle = typeof L & { Header: typeof H, Content: typeof C, Footer: typeof F, Aside: typeof A }
+type LayoutStyle = typeof L & {
+  Header: typeof H;
+  Content: typeof C;
+  Footer: typeof F;
+  Aside: typeof A;
+};
 
 const Layout = L as LayoutStyle;
 

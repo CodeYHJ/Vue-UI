@@ -10,7 +10,7 @@ import IconExample from '../views/IconExample/IconExample';
 
 import ButtonExample from '../views/ButttonExample/ButtonExample';
 
-import ModalExample from '../views/ModalExample/ModalExample.vue';
+import ModalExample from '../views/ModalExample/ModalExample';
 
 import Color from '../views/Color/Color';
 

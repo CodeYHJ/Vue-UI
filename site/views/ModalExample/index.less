@@ -1,0 +1,30 @@
+@import '../../util/util.less';
+.code-ui-example-modal {
+  .baseStyle();
+  &-header {
+    background: @main-color-light;
+    text-align: center;
+    line-height: 50px;
+  }
+  &-content {
+    background: @main-color-dark;
+    text-align: center;
+    line-height: 50px;
+    justify-content: center;
+  }
+  &-footer {
+    background: @main-color-light;
+    text-align: center;
+    line-height: 50px;
+  }
+  &-aside {
+    background: @main-color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .code-ui-layout-aside-children {
+    display: flex;
+    align-items: center;
+  }
+}
